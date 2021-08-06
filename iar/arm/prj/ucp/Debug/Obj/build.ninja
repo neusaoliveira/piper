@@ -1,0 +1,44 @@
+#Generating source browse information for project ucp
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build rit128x96x4.pbi : index rit128x96x4.xcl
+build eth_udp.pbi : index eth_udp.xcl
+build gdn.pbi : index gdn.xcl
+build crc.pbi : index crc.xcl
+build display.pbi : index display.xcl
+build lwiplib.pbi : index lwiplib.xcl
+build math.pbi : index math.xcl
+build pid.pbi : index pid.xcl
+build system.pbi : index system.xcl
+build uartstdio.pbi : index uartstdio.xcl
+build ustdlib.pbi : index ustdlib.xcl
+build wof.pbi : index wof.xcl
+build main.pbi : index main.xcl
+build startup.pbi : index startup.xcl
+build ucp_part0.pbi : link rit128x96x4.pbi eth_udp.pbi gdn.pbi crc.pbi
+build ucp_part1.pbi : link display.pbi lwiplib.pbi math.pbi pid.pbi
+build ucp_part2.pbi : link system.pbi uartstdio.pbi ustdlib.pbi wof.pbi
+build ucp_part3.pbi : link main.pbi startup.pbi
+build ucp.pbd : link ucp_part0.pbi ucp_part1.pbi ucp_part2.pbi ucp_part3.pbi
+build ucp.pbw : browsedata ucp.pbd
+
+

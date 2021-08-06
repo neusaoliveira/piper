@@ -1,0 +1,56 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[LMIFTDIDriver]
+LMI_ResetMode=0x00000000
+LMI_LeaveTargetRunning=0x00000000
+LMIFTDIserialNo=04100329A
+LMIFTDIfoundProbes=
+[LMIFTDI]
+LMIFTDIserialNo=04100329A
+LMIFTDIfoundProbes=
+[DebugChecksum]
+Checksum=1035508967
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[struct_types]
+Fmt0=struct ip_addr-addr	4	0
+Fmt1=struct pbuf-tot_len	3	0
+[array_types]
+Fmt0=unsigned char[43]	3	0
+[watch_formats]
+Fmt0={W}1:id	3	1
+Fmt1={W}1:local	4	0
+Fmt2={W}1:longitude	0	9
+Fmt3={W}1:out_data	5	2
+Fmt4={W}1:p	0	9
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\app\xplane\eth_udp.c}.144.9" 1 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\main.c}.133.13" 1 0 0 0 "" 0 ""
+Count=2
+[Aliases]
+A0=_ "S:\arm\lib\gpio.c" "S:\arm\LM3S6965\lib\gpio.c"
+A1=_ "S:\arm\lib\sysctl.c" "S:\arm\LM3S6965\lib\sysctl.c"
+Count=2
+SuppressDialog=1

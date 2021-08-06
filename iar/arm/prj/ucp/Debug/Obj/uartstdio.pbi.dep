@@ -1,0 +1,14 @@
+uartstdio.pbi: \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\lib\utils\uartstdio.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdarg.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\inc/hw_ints.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\inc/hw_memmap.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\inc/hw_types.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\inc/hw_uart.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/debug.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/interrupt.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/rom.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/rom_map.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/sysctl.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/uart.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\lib/utils/uartstdio.h

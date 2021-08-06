@@ -1,0 +1,21 @@
+"--endian=little" 
+
+"--cpu=Cortex-M3" 
+
+"--fpu=None" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\CONFIG\debugger\TexasInstruments\LM3S6965.ddf" 
+
+"--drv_verify_download" 
+
+"--semihosting" 
+
+"--device=LM3S6965" 
+
+"--drv_interface_speed=500" 
+
+
+
+

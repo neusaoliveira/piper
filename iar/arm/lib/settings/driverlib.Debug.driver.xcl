@@ -1,0 +1,19 @@
+"--endian=little" 
+
+"--cpu=Cortex-M4F" 
+
+"--fpu=VFPv4" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CONFIG\debugger\TexasInstruments\LM4F110B2QR.ddf" 
+
+"--semihosting" 
+
+"--device=LM4F110B2QR" 
+
+"--multicore_nr_of_cores=1" 
+
+
+
+

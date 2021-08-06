@@ -1,0 +1,94 @@
+INPE
+Instituto Nacional de Pesquisas Espaciais
+Projeto Cubesat - AESP-14
+ARM CODES
+--------------------------------------------------------
+
+	1. Diretório:
+
+Esta pasta /arm pode ser armazenada em qualquer lugar,
+por exemplo: c:/aesp14/firmware/arm
+
+O projeto é configurado para trabalhar na raiz s:/
+Para que os arquivos de projeto funcionem em todos os
+computadores, é necessario manter essa raiz s:/
+
+Para apontar a raiz do codigo para s:/arm basta executar
+este comando no terminal:
+
+ > subst s: c:/aesp14/firmware
+
+E a unidade s:/ ira aparecer no sistema como um link para
+o diretorio c:/aesp14/firmware.
+
+	1.1. Inicialização:
+
+Para que este processo seja persistente, deve-se criar
+um arquivo, ex. inicia.bat com o comando acima, e salva-lo
+na pasta: start menu -> programs -> startup
+Assim ele é executado na inicializacao do computador.
+
+Nome do arquivo: inicia.bat
+
+ > @ECHO OFF
+ > subst s: c:/aesp14/firmware
+ >
+
+--------------------------------------------------------
+
+	2. Sincronismo via SVN
+
+Para a sincronização do código é necessário instalar o 
+cliente Tortoise SVN, disponível em:
+
+ > http://sourceforge.net/projects/tortoisesvn/
+
+Após instalado, acesse a pasta c:/aesp14/firmware, clique 
+com o botão direito do mouse sobre a pasta /arm e acesse 
+o menu SVN Checkout... No campo URL of Repository, copiar 
+o link:
+
+ > https://pegasus.unfuddle.com/svn/pegasus_arm/
+
+Clique em OK para prosseguir. O cliente Tortoise irá 
+solicitar o login no servidor SVN. Os dados cadastrados são:
+
+ > pegasus
+ > 14-bis
+
+Após executado este processo, a pasta s:/arm contém todos os 
+códigos utilizados no desenvolvimento do Pegasus AutoPilot,
+incluindo overlay de ícones verdes indicando que estão todos
+sincronizados.
+
+	2.1. Commit:
+
+Após alterado algum arquivo-fonte do código, seu ícone estará
+vermelho, indicando que está diferente do original salvo no
+repositório. Terminado o trabalho executado, deve se acessar
+o menu SVN Commit... da pasta raiz s:/arm e, assim, efetuar 
+as alterações no servidor. As devidas informações de login 
+deverão ser informadas.
+
+	2.2. Update:
+
+Antes de se iniciar algum trabalho, deve-se sincronizar o 
+código a fim de obter sempre os arquivos mais atuais. Deve-se 
+entao acessar o menu SVN Update da pasta raiz s:/arm. As 
+devidas informações de login deverão ser informadas.
+
+--------------------------------------------------------
+
+	3. Cleanup
+
+O compilador durante sua execução cria diversos arquivos de uso
+temporário. Utilize o arquivo limpa.bat para apagá-los quando 
+necessário.
+
+
+
+
+
+
+
+

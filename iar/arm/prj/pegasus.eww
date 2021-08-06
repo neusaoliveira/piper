@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\lib\driverlib-cm3.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\lat\lat.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\lon\lon.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\ucp\ucp.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

@@ -1,0 +1,6 @@
+display.pbi: C:\Users\adalb\Desktop\GitHub\piper\iar\arm\srv\display.c \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\etc/defines.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\drv/rit128x96x4.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\srv/display.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\..\..\inc/hw_types.h \
+  C:\Users\adalb\Desktop\GitHub\piper\iar\arm\prj\ucp\globals.h
